@@ -9,7 +9,7 @@ class MainViewModel : ViewModel() {
 
     val match: LiveData<Match> get() = _match
 
-    private var _match = MutableLiveData<Match>(Match(true))
+    private var _match = MutableLiveData<Match>(Match(false))
 
     fun compareInputs(input1: String, input2: String) {
         _match.value = Match(input1 == input2)

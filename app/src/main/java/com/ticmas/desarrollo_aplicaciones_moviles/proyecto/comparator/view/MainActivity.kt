@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         mainViewModel.match.observe(this) {
             var caption = if (it.state) "Contraseñas coincidentes!" else "Las contraseñas NO coinciden!"
-            binding.StateTxt.text = caption
+            binding.stateTxt.text = caption
         }
 
         binding.compareBtn.setOnClickListener {
