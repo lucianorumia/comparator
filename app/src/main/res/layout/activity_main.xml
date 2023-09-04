@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,7 +22,7 @@
             android:layout_marginBottom="8dp"
             android:height="48dp"
             android:ems="10"
-            android:hint="Ingresá la contraseña"
+            android:hint="@string/input1_hint"
             android:inputType="textPassword" />
 
         <EditText
@@ -34,7 +33,7 @@
             android:layout_marginBottom="8dp"
             android:height="48dp"
             android:ems="10"
-            android:hint="Volvé a ingresarla"
+            android:hint="@string/input2_hint"
             android:inputType="textPassword" />
 
         <Button
@@ -44,14 +43,15 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:height="48dp"
-            android:text="Comparar" />
+            android:text="@string/compare_btn_text" />
 
         <TextView
             android:id="@+id/stateTxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="center_horizontal" />
+            android:gravity="center_horizontal"
+            android:visibility="gone" />
     </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
